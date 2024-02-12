@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+  font-family:  Tahoma;
+}
+img {
+  width: 150px;
+  padding: 20px;
+  
+}
+
+button {
+  background-color: rgb(0, 136, 255);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 1;
+}
+
+header {
+  height: 500px;
+  background-size: cover;
+  background-image:
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/favicon.jpg");
+    box-shadow: 2em;
+}
+header img{
+  border-radius: 5em;
+  
+}
+header .container {
+  display: flex;
+  text-align: center;
+  padding: 15px 30px;
+  text-shadow: 2px 3px black;
+}
+
+header h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+header a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+
+.breadcrumb {
+  
+  flex-direction: column;
+  
+}
+
+#carouselExampleCaptions{
+  background-color: blanchedalmond;
+}
+
+#carouselExampleCaptions h3{
+text-align: center;
+color: rgb(244, 201, 137);
+text-decoration: overline;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 25px;
+text-shadow: 2px 3px black;
+padding-top: 25px;
+text-decoration-color: rgb(242, 213, 170);
+
+}
+
+.main-container-wrapper {
+  margin-top: 0;
+  padding-top: 40px;
+  flex-direction: column;
+  
+}
+.main-container-wrapper h3{
+  color: rgb(195, 153, 91);
+}
+#calendario .container {
+  color: black;
+  text-align: center;
+  margin-top: 2em;
+}
+
+#titulo {
+  color: blanchedalmond;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#Chisiamo {
+  height: 600px;
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(247, 225, 192);
+ 
+}
+#Chisiamo h3 {
+  color: rgb(251, 207, 141);
+  text-decoration: overline;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: 2px 3px black;
+  padding-bottom: 15px;
+}
+
+#accordionExample .accordion-button{
+  background-color: rgb(238, 190, 117);
+}
+
+#accordionExample .accordion-item{
+background-color: rgb(233, 160, 51);
+}
+
+#Chisiamo img{
+width: 200px;
+}
+
+#Servizi {
+  background-image:
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/negro.jpg");
+}
+
+#Servizi h3{
+text-align: center;
+color: rgb(251, 207, 141);
+text-shadow: 1px 2px rgb(162, 119, 55);
+text-decoration: overline;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 25px;
+
+padding-top: 25px;
+}
+
+#Servizi .container {
+  padding: 50px;
+  color: white;
+  text-align: center;
+  background-size: cover;
+
+}
+
+#CollapseExample .collapse-show{
+  color: black;
+}
+
+.carta {
+  margin: 30px;
+  padding: 50px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carta:first-child {
+  background-image:
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/caf1.png");
+}
+
+
+.carta:nth-child(3) {
+  background-image:
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/patronato.jpg");
+}
+
+.carta:nth-child(4) {
+  background-image:
+
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/CENTRO-SERVIZI.jpg");
+}
+.carta:nth-child(5) {
+  background-image:
+
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/mundo.jpg");
+}
+.carta:nth-child(6) {
+  background-image:
+
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/trabajos.jpeg");
+    
+    
+}
+.card-card-body {
+  background-color: transparent;
+  color:white;
+}
+
+#Colaboratori{
+  background-color: blanchedalmond;
+}
+
+#Colaboratori h3 {
+  text-align: center;
+  color: rgb(243, 197, 127);
+  text-decoration: overline;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: 2px 3px black;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+#Colaboratori .container {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#Colaboratori .card{
+  margin: 0.5em;
+  text-align: center;
+  background-color: rgb(250, 200, 125);
+}
+
+#Colaboratori .btn-outline-danger{
+  font-size: 25px;
+
+}
+
+#Dove  {
+  text-align: center;
+  background-color: rgb(238, 216, 184);
+}
+#Dove .container{
+padding: 50px;
+min-height: 20vh;
+}
+#Dove h3{
+  text-align: center;
+  color: rgb(243, 197, 127);
+  text-decoration: overline;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: 2px 3px black;
+}
+#Dove img{
+  width: 300px;
+  padding: 40px;
+}
+#Dove p{
+  padding-bottom: 10px;
+}
+#Dove .btn-outline-warning{
+  font-size: 25px;
+
+}
+#Contatti {
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+#Contatti h3{
+  text-align: center;
+  color: rgb(243, 197, 127);
+  text-decoration: overline;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: 2px 3px black;
+  padding-bottom: 15px;
+}
+
+#Contatti .container{
+  display: flex;
+  min-height: 20vh;
+}
+.containercontatti li{
+  background-color: rgb(243, 196, 125);
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.list-group img {
+ width: 80px ;
+}
+footer {
+  text-align: center;
+  margin: 1em;
+
+}
+
+
+@media (min-width:720px) {
+
+header{
+  height: 500px;
+  background-size: cover;
+  background-image:
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/favicon.jpg");
+   
+}
+
+header .container{
+  flex-direction: column;
+  height: 100px;
+}
+header .img{
+  
+  justify-content: space-between;
+  border-radius: 15%;
+}
+header h1{
+  padding-bottom: 100px;
+  justify-content: center;
+
+}
+.breadcrumb{
+  flex-direction: row;
+  justify-content: center;
+}
+#Chisiamo{
+  background-position: 730px 310px ;
+}
+#Servizi .servicios{
+  
+  justify-content: center;
+}
+#Colaboratori .container{
+  justify-content: center;
+}
+#Dove img{
+  width: 700px;
+}
+#Dove .btn-primary {
+  font-size: 30px;
+  
+}
+#Contatti .container{
+  flex-direction: column;
+}
+footer{
+  text-align: end;
+  
+}
+
+.bordes{
+  margin: 0;
+  padding: 0;
+}
+
+}
