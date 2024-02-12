@@ -25,10 +25,12 @@ header {
     url("img/favicon.jpg");
     box-shadow: 2em;
 }
+
 header img{
   border-radius: 5em;
   
 }
+
 header .container {
   display: flex;
   text-align: center;
@@ -45,7 +47,7 @@ header h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+ 
 }
 
 header a {
@@ -53,18 +55,16 @@ header a {
   color: blanchedalmond;
 }
 
-
 .breadcrumb {
-  
   flex-direction: column;
+}
+
+#calendario{
+  background-color: rgb(247, 225, 192);
   
 }
 
-#carouselExampleCaptions{
-  background-color: blanchedalmond;
-}
-
-#carouselExampleCaptions h3{
+#calendario h3{
 text-align: center;
 color: rgb(244, 201, 137);
 text-decoration: overline;
@@ -77,6 +77,15 @@ text-decoration-color: rgb(242, 213, 170);
 
 }
 
+.carousel-caption p{
+  color: rgb(241, 156, 28);
+ flex-direction: column;
+ padding-bottom: 90px;
+}
+.carousel-caption h5{
+  color: rgb(241, 156, 28);
+
+}
 .main-container-wrapper {
   margin-top: 0;
   padding-top: 40px;
@@ -86,11 +95,7 @@ text-decoration-color: rgb(242, 213, 170);
 .main-container-wrapper h3{
   color: rgb(195, 153, 91);
 }
-#calendario .container {
-  color: black;
-  text-align: center;
-  margin-top: 2em;
-}
+
 
 #titulo {
   color: blanchedalmond;
@@ -121,7 +126,7 @@ text-decoration-color: rgb(242, 213, 170);
 }
 
 #accordionExample .accordion-item{
-background-color: rgb(233, 160, 51);
+background-color: rgb(238, 190, 117);
 }
 
 #Chisiamo img{
@@ -217,7 +222,8 @@ padding-top: 25px;
 }
 
 #Colaboratori{
-  background-color: blanchedalmond;
+  background-color: rgb(247, 225, 192);
+ 
 }
 
 #Colaboratori h3 {
@@ -253,7 +259,8 @@ padding-top: 25px;
 
 #Dove  {
   text-align: center;
-  background-color: rgb(238, 216, 184);
+  background-color: rgb(247, 225, 192);
+  
 }
 #Dove .container{
 padding: 50px;
@@ -283,7 +290,8 @@ min-height: 20vh;
   display: flex;
   padding: 50px;
   text-align: center;
-  background-color: blanchedalmond;
+  background-color: rgb(247, 225, 192);
+  
 }
 #Contatti h3{
   text-align: center;
@@ -343,33 +351,55 @@ header h1{
   justify-content: center;
 
 }
+
+#carouselExampleCaptions{
+width: 50%;
+margin: 0 auto;
+}
+
+.carousel-caption p{
+font-size: xx-large;
+ padding-bottom: 250px;
+}
+
+.carousel-caption h5{
+  font-size: xx-large;
+   
+  }
+
 .breadcrumb{
   flex-direction: row;
   justify-content: center;
 }
+
 #Chisiamo{
   background-position: 730px 310px ;
 }
+
 #Servizi .servicios{
   
   justify-content: center;
 }
+
 #Colaboratori .container{
   justify-content: center;
 }
+
 #Dove img{
   width: 700px;
 }
+
 #Dove .btn-primary {
   font-size: 30px;
   
 }
+
 #Contatti .container{
   flex-direction: column;
 }
+
 footer{
   text-align: end;
-  
 }
 
 .bordes{
