@@ -261,7 +261,8 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>26 Gennaio - Medico Legale</h3>
+            <h3> Venerdí 3 Maggio - Medico Legale <br> <br> Venerdí 3 Maggio  - Avvocato <br> <br>  </h3>
+            
         </div>`;
   }
   eventsContainer.innerHTML = events;

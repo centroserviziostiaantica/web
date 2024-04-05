@@ -248,6 +248,7 @@ header .img{
   width: 40%;
   min-height: 100%;
   padding: 20px 0;
+  
 }
 
 .right .today-date {
@@ -360,7 +361,7 @@ header .img{
   justify-content: center;
   font-size: 1rem;
   color: #878895;
-  border: 2px solid #878895;
+  border: 3px solid #878895;
   opacity: 0.5;
   border-radius: 50%;
   background-color: transparent;
