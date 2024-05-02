@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../React/first-app"
+		},
+		{
+			"path": "../../../Html/Projecto-html"
+		},
+		{
+			"path": "../../../Html/ej"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Projecto-html"
+	}
+}
