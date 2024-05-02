@@ -32,7 +32,7 @@
         </ol>
       </nav>
     </div>
-    </div>
+    
   </header>
 
   <div class="divisor"></div>
@@ -100,7 +100,8 @@
             </div>
           </div>
           <div class="add-event-footer">
-            <button class="add-event-btn">Add Event</button>
+            <!-- Boton para crear evento  -->
+           <!-- <button class="add-event-btn">Aggiungere Evento</button> -->
           </div>
         </div>
       </div>
@@ -161,8 +162,11 @@
           </div>
         </div>
       </div>
-    
+    <div class="qr">
     <div><a href="https://www.instagram.com/centroservizi.ostiaantica/" target="_blank"><img src="img/scannme.png" alt=""></div></a>
+    <div class="central"><a href="https://www.instagram.com/centroservizi.ostiaantica/" target="_blank"><img src="img/scannme.png" alt=""></div></a>
+    <div><a href="https://www.instagram.com/centroservizi.ostiaantica/" target="_blank"><img src="img/scannme.png" alt=""></div></a>
+    </div>
   </section>
   
 
@@ -326,7 +330,7 @@
       <div class="containercontatti">
         <ul class="list-group">
 
-          <li class="list-group-item"><a href="https://www.google.com/search?q=centro+servizi+ostia+antica+whatsapp&client=opera-gx&hs=WgI&sca_esv=30cece12f57037db&sxsrf=ACQVn0-k-c-36Htz9Is6csCeYJKQ2gforw%3A1707754437934&ei=xUPKZYG9OPbfi-gPxMS7wAI&ved=0ahUKEwjBs4uFmaaEAxX27wIHHUTiDigQ4dUDCBA&uact=5&oq=centro+servizi+ostia+antica+whatsapp&gs_lp=Egxnd3Mtd2l6LXNlcnAiJGNlbnRybyBzZXJ2aXppIG9zdGlhIGFudGljYSB3aGF0c2FwcEi3BlAAWABwAXgAkAEAmAEAoAEAqgEAuAEDyAEA4gMEGAEgQYgGAQ&sclient=gws-wiz-serp" target="_blank"><img src="img/whatsapp.png" alt=""></a> <br>328 839 1213 -  06 8922 5334</li>
+          <li class="list-group-item"><a href="wa.me/+393288391213" target="_blank"><img src="img/whatsapp.png" alt=""></a> <br>328 839 1213 -  06 8922 5334</li>
           <li class="list-group-item"><a href="https://www.instagram.com/centroservizi.ostiaantica/" target="_blank"><img src="img/instagram-removebg-preview.png" alt=""></a> <br> centrocervizi.ostiaantica
             
             </li>
@@ -347,5 +351,11 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 400);
+})
+  </script>
 </body>
 </html>

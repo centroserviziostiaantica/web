@@ -19,12 +19,11 @@ body {
 background-color:  rgb(247, 225, 192);
 }
 
-head img{
-border-radius: 15px;
-}
+
 
 header {
-  height: 500px;
+  
+  height: 450px;
   background-size: cover;
   background-image:
     linear-gradient(0deg,
@@ -34,9 +33,10 @@ header {
     box-shadow: 2em;
 }
 
+
 header img{
   border-radius: 5em;
-  
+  transition: 0.6s;
 }
 
 header .container {
@@ -49,6 +49,7 @@ header .container {
 header h1 {
   padding-top: 30px;
   padding-bottom: 20px;
+  transition: 0.6s;
 }
 
 .img {
@@ -66,7 +67,9 @@ header a {
 .breadcrumb {
   flex-direction: column;
   margin-right: 25px;
+  transition: 0.6s;
 }
+
 
 .breadcrumb a:hover{
   color:rgb(185, 114, 7);
@@ -84,12 +87,12 @@ text-transform: uppercase;
 font-weight: 600;
 font-size: 25px;
 text-shadow: 2px 3px black;
-padding-top: 25px;
+padding-top: 55px;
 text-decoration-color: rgb(242, 213, 170);
 }
 
 #calendario .container{
-  width: 1000px;
+  
   background-color: rgb(238, 190, 117);
   margin: 0 auto;
   --primary-clr: rgb(255, 154, 3);
@@ -106,6 +109,8 @@ text-decoration-color: rgb(242, 213, 170);
   background-color:  rgb(238, 190, 117);
   
 }
+
+
 
 .main-container-wrapper {
   margin-top: 0;
@@ -128,7 +133,7 @@ text-decoration-color: rgb(242, 213, 170);
 #Chisiamo {
   height: 600px;
   text-align: center;
-  padding: 50px;
+  padding: 60px 30px;
   background-color: rgb(247, 225, 192);
  
 }
@@ -150,9 +155,20 @@ text-decoration-color: rgb(242, 213, 170);
 background-color: rgb(238, 190, 117);
 }
 
+
+#Chisiamo .qr{
+  
+  flex-direction:row ;
+  display: flex;
+  justify-content: center;
+  padding: 55px 55px;
+  }
+
 #Chisiamo img{
-width: 200px;
+width: 100px;
+padding: 3px;
 }
+
 
 #Servizi {
   background-image:
@@ -281,9 +297,6 @@ padding-top: 25px;
 
 }
 
-.label{
-  border:  3px solid rgb(253, 174, 54);
-}
 
 .bold {
 font-weight: 800;
@@ -298,6 +311,8 @@ font-weight: 800;
 #Dove .container { 
 padding: 50px;
 min-height: 20vh;
+border:  3px solid rgb(253, 174, 54);
+border-width: 0 4px 8px 12px;
 }
 
 #Dove h3 {
@@ -311,7 +326,7 @@ min-height: 20vh;
 }
 
 #Dove img {
-  width: 300px;
+  width: 120%;
   padding: 0 35px 15px 0;
 }
 #Dove p {
@@ -368,6 +383,7 @@ footer {
 .calendar-container {
   display: flex;
   flex-direction:row ;
+  
 }
 
 @media screen and (max-width: 1000px) {
@@ -375,10 +391,19 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
   }
+  header {
+   height: 450px;
+  }
+
   .container {
     min-height: 100vh;
     flex-direction: column;
     border-radius: 0;
+    
+  }
+  #calendario .container{
+    max-height:1350px;
+    padding: 0 25px;
   }
   .container .left {
     width: 100%;
@@ -414,7 +439,7 @@ footer {
 @media (min-width:720px) {
 
 header{
-  height: 500px;
+  height: 375px;
   background-size: cover;
   background-image:
     linear-gradient(0deg,
@@ -438,15 +463,32 @@ header h1{
 }
 
 
-
 .breadcrumb{
   flex-direction: row;
   justify-content: center;
+  
+}
+
+#calendario .titulo {
+ padding-top: 100px;
 }
 
 #Chisiamo{
   background-position: 730px 310px ;
+  padding-top: 100px;
 }
+
+#Chisiamo img{
+  width: 150px;
+  padding: 0 auto;
+  
+}
+
+#Chisiamo .qr{
+  justify-content: space-between;
+ 
+}
+
 
 #Servizi .servicios{
 
@@ -468,6 +510,7 @@ header h1{
 
 #Contatti .container{
   flex-direction: column;
+  max-width: 500px;
 }
 
 footer{
@@ -481,6 +524,27 @@ footer{
   padding: 0;
 }
 
+#calendario .container{
+  width: 1200px;
+  max-height:1350px;
+}
+
+}
+
+@media screen and (min-width: 600px) and (max-width:1000px){
+#calendario .container{
+  width: 1200px;
+  max-height:1150px;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px){
+  #calendario .container{
+    width: 520px;
+    max-height: 1200px;
+    padding: 0 15px;
+  }
+ 
 }
 
 @media screen and (max-width: 500px) {
@@ -501,4 +565,10 @@ footer{
   .right .today-date {
     padding: 20px;
   }
+  #calendario .container{
+    width: 320px;
+    max-height: 100px;
+    padding: 0 15px;
+  }
+ 
 }
