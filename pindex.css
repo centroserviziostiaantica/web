@@ -81,14 +81,14 @@ header a {
 
 #calendario .titulo{
 text-align: center;
-color: rgb(244, 201, 137);
+color: black;
 text-decoration: overline;
 text-transform: uppercase;
 font-weight: 600;
 font-size: 25px;
-text-shadow: 2px 3px black;
+
 padding-top: 55px;
-text-decoration-color: rgb(242, 213, 170);
+font-family: 'Courier New', Courier, monospace;
 }
 
 #calendario .container{
