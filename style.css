@@ -591,10 +591,16 @@ footer {
     max-height: 100px;
     padding: 0 15px;
   }
- 
-  
   .no-event h3{
     padding: 0px;
   }
   
+  nav{
+   padding: 0;
+  }
+
+  nav.sticky{
+    padding: 0;
+   }
+
 }
