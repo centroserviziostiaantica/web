@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C.C Ostia Antica</title>
   <link rel="icon" type="image/x-icon" href="img/centroservizilogo.jpg">
-  <link rel="stylesheet" href="pindex.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="calendarstyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -21,15 +21,15 @@
       </div>
       <h1 id="titulo">C.A.F PATRONATO - Centro Cervizzi - Ostia Antica</h1>
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#"></a></li>
-          <li class="breadcrumb-item"><a href="#Chisiamo">Chi siamo?</a></li>
-          <li class="breadcrumb-item"><a href="#Servizi">Servizi</a></li>
-          <li class="breadcrumb-item"><a href="#Colaboratori">Colaboratori</a></li>
-          <li class="breadcrumb-item"><a href="#Dove">Dove</a></li>
-          <li class="breadcrumb-item"><a href="#Contatti">Contatti</a></li>
-        </ol>
+      <nav id="mynavbar">
+        <ul class="navbar-ul">
+          <li class="navbar-item"><a href="#"></a></li>
+          <li class="navbar-item"><a href="#Chisiamo">Chi siamo?</a></li>
+          <li class="navbar-item"><a href="#Servizi">Servizi</a></li>
+          <li class="navbar-item"><a href="#Colaboratori">Colaboratori</a></li>
+          <li class="navbar-item"><a href="#Dove">Dove</a></li>
+          <li class="navbar-item"><a href="#Contatti">Contatti</a></li>
+        </ul>
       </nav>
     </div>
     
@@ -71,7 +71,7 @@
       </div>
       <div class="right">
         <div class="today-date">
-          <div class="event-day">wed</div>
+          <div class="event-day">Venerdí</div>
           <div class="event-date">12th december 2022</div>
         </div>
         <div class="events"></div>
@@ -162,23 +162,24 @@
           </div>
         </div>
       </div>
-    <div class="qr">
+
+      
+  </section>
+  
+  <div class="qr">
     <div><a href="https://www.instagram.com/centroservizi.ostiaantica/" target="_blank"><img src="img/scannme.png" alt=""></div></a>
     <div class="central"><a href="https://www.instagram.com/centroservizi.ostiaantica/" target="_blank"><img src="img/scannme.png" alt=""></div></a>
     <div><a href="https://www.instagram.com/centroservizi.ostiaantica/" target="_blank"><img src="img/scannme.png" alt=""></div></a>
     </div>
-  </section>
-  
-
   <div class="divisor"></div>
 
   <section id="Servizi">
-    
+    <h3>I nostri servizi</h3>
     <div class="container">
-      <h3>I nostri servizi</h3>
+      
       <div class="servicios">
 
-        <div class="carta" id="asesoramiento">
+        <div class="carta" >
           <h6>CAF</h6>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
@@ -264,30 +265,30 @@
 
 
   <section id="Colaboratori">
-    <h3>I nostri colaboratori</h3>
+    <h3>Altri Servizi</h3>
     <div class="container">
       <div class="card" style="width: 18rem;">
-        <img src="img/jardineria.jpg" class="card-img-top" alt="...">
+        <img src="img/openenergia.jfif" class="card-img" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Sezione in allestimento</p>
-          <a href="#" class="btn btn-outline-danger">Go somewhere</a>
+          <h5 class="card-title">OpenEnergia <br> Luce e Gas</h5>
+          <p class="card-text">Consulente sempre in sede</p>
+          <a href="https://wa.me/+393288391213" target="_blank" class="btn btn-outline-danger">Contattaci</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
-        <img src="img/eventos.jpg" class="card-img-top" alt="...">
+        <img src="img/cv.jfif" class="card-img" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Sezione in allestimento</p>
-          <a href="#" class="btn btn-outline-danger">Go somewhere</a>
+          <h5 class="card-title">Curriculum <br> Profesionale</h5>
+          <p class="card-text"> Per aiudarti nella ricerca del lavoro</p>
+          <a href="https://wa.me/+393288391213" target="_blank" class="btn btn-outline-danger">Contattaci</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
-        <img src="img/ayudaescolar.jpg" class="card-img-top" alt="...">
+        <img src="img/curriculum.jfif" class="card-img" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Sezione in allestimento</p>
-          <a href="#" class="btn btn-outline-danger">Go somewhere</a>
+          <h5 class="card-title">Programmatore <br> Informatico </h5>
+          <p class="card-text">Siti web per la tua attivita'</p>
+          <a href="https://wa.me/+393288391213"  class="btn btn-outline-danger" target="_blank">Contattaci</a>
         </div>
       </div>
     </div>
@@ -330,7 +331,7 @@
       <div class="containercontatti">
         <ul class="list-group">
 
-          <li class="list-group-item"><a href="wa.me/+393288391213" target="_blank"><img src="img/whatsapp.png" alt=""></a> <br>328 839 1213 -  06 8922 5334</li>
+          <li class="list-group-item"><a href="https://wa.me/+393288391213" target="_blank"><img src="img/whatsapp.png" alt=""></a> <br>328 839 1213 -  06 8922 5334</li>
           <li class="list-group-item"><a href="https://www.instagram.com/centroservizi.ostiaantica/" target="_blank"><img src="img/instagram-removebg-preview.png" alt=""></a> <br> centrocervizi.ostiaantica
             
             </li>
@@ -344,18 +345,27 @@
 
 
   <footer>
-    <p>© Centro Cervizi Ostia Antica - net.centroserviziostiaantica@gmail.com - 2023</p>
+    <p>© Centro Cervizi Ostia Antica - net.centroserviziostiaantica@gmail.com - 2024</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script type="text/javascript">
-    window.addEventListener("scroll", function(){
-  var header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 400);
-})
-  </script>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    var nav = document.getElementById("mynavbar");
+    var sticky = nav.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+    
+    </script>
+    
 </body>
 </html>

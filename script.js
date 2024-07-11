@@ -237,7 +237,7 @@ function getActiveDay(date) {
   eventDate.innerHTML = date + " " + months[month] + " " + year;
 }
 
-//function update events when a day is active
+//function update events when a day is active - CARTEL PARA EL CALENDARIO!!!!!!!!
 function updateEvents(date) {
   let events = "";
   eventsArr.forEach((event) => {
@@ -261,9 +261,10 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3> Venerdí 3 Maggio - Medico Legale <br> <br> Venerdí 3 Maggio  - Avvocato <br> <br>  </h3>
-            
-        </div>`;
+            <h3> Venerdí 26 Luglio - Medico Legale e Avvocato  </h3>
+            <h3> Dal 05/08/2024 al 30/08/2024 saremo chiusi per ferie  </h3>
+        </div>`
+        ;
   }
   eventsContainer.innerHTML = events;
   saveEvents();
@@ -473,3 +474,4 @@ function convertTime(time) {
   time = timeHour + ":" + timeMin + " " + timeFormat;
   return time;
 }
+
