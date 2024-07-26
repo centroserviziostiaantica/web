@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quattro's Menu</title>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3>Quattro's Menu</h3>
+        </div>
+
+        <ul class="navbarmenu">
+            <li class="menu-item"><a href="#"></a></li>
+            <li class="menu-item"><a href="#productos">Bebidas</a></li>
+            <li class="menu-item"><a href="#productos2">Cafeteria</a></li>
+            <li class="menu-item"><a href="#productos3">Dulce</a></li>
+            <li class="menu-item"><a href="#productos4">Salado</a></li>
+            <li class="menu-item"><a href="#productos5">Helados</a></li>
+          </ul>
+        
+
+        <div>
+            <label>
+                <input type="checkbox">
+                <div class="toggle">
+                    <span class="top_line common"></span>
+                    <span class="mid_line common"></span>
+                    <span class="bottom_line common"></span>
+                </div>
+
+
+                <navbar class="slide">
+                    <ul>
+                        <li><a href="#home" rel=""><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="#helados" rel=""><i class="fa fa-diamond" aria-hidden="true"></i> Productos</a>
+                        </li>
+                        <li><a href="#historia" rel=""><i class="fa fa-map-marker" aria-hidden="true"></i> Negocios</a>
+                        </li>
+                        <li><a href="#ubicacion" rel=""><i class="fa fa-user" aria-hidden="true"></i> Contactos</a></li>
+                    </ul>
+                </navbar>
+            </label>
+        </div>
+    </header>
+
+    <section id="producto">
+
+        <div class="container">
+            <h1>Bebidas</h1>
+            <div id="productos" class="productos">
+                <!-- Los productos se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Cafeteria</h1>
+            <div id="productos2" class="productos">
+                <!-- Los productos se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Dulce</h1>
+            <div id="productos3" class="productos">
+                <!-- Los productos se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Salado</h1>
+            <div id="productos4" class="productos">
+                <!-- Los productos se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Helados</h1>
+            <div id="productos5" class="productos">
+                <!-- Los productos se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+
+    </section>
+    <script src="scriptsmenu.js"></script>
+    <!-- sticky scroll hacia abajo  -->
+    <script type="text/javascript">
+        window - addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+    
+</body>
+
+</html>
