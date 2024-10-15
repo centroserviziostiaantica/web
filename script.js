@@ -261,8 +261,8 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3> Venerdí 26 Luglio - Medico Legale e Avvocato  </h3>
-            <h3> Dal 05/08/2024 al 30/08/2024 saremo chiusi per ferie  </h3>
+            <h3> Venerdí 18 Ottobre Medico Legale e Avvocato  </h3>
+            
         </div>`
         ;
   }
