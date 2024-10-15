@@ -142,13 +142,15 @@ font-family: 'Courier New', Courier, monospace;
 #calendario 
 {
   background-color: #F6F5E8;
+  display: flex;
+  justify-content:space-around;
 }
 
 
 #calendario .container
 {
   background-color: #A1332A;
-  margin: 0 auto;
+  margin: 100px;
   --primary-clr:#A1332A;
   position: relative;
   max-width: 600px;
@@ -177,7 +179,8 @@ font-family: 'Courier New', Courier, monospace;
 
 
 #Chisiamo {
-  height: auto;
+  width: 50%;
+  height: 100px;
   text-align: center;
   padding: 30px 30px;
   background-color: #F6F5E8;
@@ -234,9 +237,9 @@ color:white;
 }
 
 #Servizi .btn-primary{
-  background-color: #A1332A;
+  background-color: #cf1100;
   color: white;
-  
+  border-color: #9a0d00;
 }
 
 .carta {
@@ -322,7 +325,7 @@ color:white;
 
 #Colaboratori .btn-outline-danger{
   font-size: 25px;
-  background-color: rgb(64, 13, 13)
+  background-color: rgb(153, 37, 37)
 }
 
 #Colaboratori .card:hover{
@@ -362,13 +365,12 @@ border-width: 0 4px 8px 12px;
 
 #Contatti {
   padding: 50px;
-  text-align: center;
   background-color: #F6F5E8;
-  
 }
 
 #Contatti .container{
   min-height: 20vh;
+ 
 }
 
 
@@ -380,8 +382,14 @@ border-width: 0 4px 8px 12px;
   
 }
 
+
 .list-group img {
- width: 80px ;
+ width: 35%;
+}
+
+.list-group-item{
+  width: 35%;
+  font-size: 22px;
 }
 
 footer {
@@ -474,7 +482,7 @@ footer {
   
   #Contatti .container{
     flex-direction: column;
-    max-width: 500px;
+    max-width: auto;
   }
   
   ul.list-group{
@@ -586,21 +594,50 @@ footer {
   .right .today-date {
     padding: 20px;
   }
+
+  #calendario{
+    flex-direction: column;
+    align-items: center;
+    max-height: auto;
+  }
+
   #calendario .container{
     width: 320px;
-    max-height: 100px;
+    max-height: auto;
     padding: 0 15px;
+   
   }
   .no-event h3{
-    padding: 0px;
+    padding: 50px 10px 0 10px;
   }
   
+  #Chisiamo{
+   margin: -100px 0 10px 0;
+    width:90%;
+    height: auto;
+  }
+
+  #accordionExample .accordion-item{
+    z-index: 100000;
+    opacity: 1;
+  }
+
   nav{
    padding: 0;
   }
 
   nav.sticky{
     padding: 0;
+    
    }
+
+   .sticky{
+    height: 65px;
+   }
+
+  .list-group, .list-group-item{
+ width: 100%;
+ font-size: 18px;
+  }
 
 }
