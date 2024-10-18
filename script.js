@@ -262,6 +262,7 @@ function updateEvents(date) {
   if (events === "") {
     events = `<div class="no-event">
             <h3> Venerdí 18 Ottobre Medico Legale e Avvocato  </h3>
+            <h3> Venerdí 15 Medico e Avvocato   </h3>
             
         </div>`
         ;
