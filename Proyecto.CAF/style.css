@@ -1,0 +1,737 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Tahoma;
+}
+
+img {
+  width: 120px;
+  padding: 20px;
+}
+
+body {
+  background-color: rgb(247, 225, 192);
+}
+
+header {
+  max-height: 270px;
+  background-size: cover;
+  background-image:
+    linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("img/favicon.jpg");
+  box-shadow: 2em;
+}
+
+header img {
+
+  border-radius: 5em;
+  transition: 0.6s;
+}
+
+header .container {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+
+}
+
+header h1 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  transition: 0.6s;
+}
+
+.img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+#titulo {
+  color: blanchedalmond;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+nav {
+  justify-content: center;
+  transition: 0.6s;
+  top: 0;
+  z-index: 10000;
+  padding-left: 170px;
+}
+
+.navbar-ul {
+  padding: 5px;
+}
+
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  padding: 1px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 7px;
+  height: 45px;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #A1332A;
+}
+
+nav.sticky ul li a {
+  color: white;
+  text-shadow: none;
+  font-weight: 800;
+  font-size: 20px;
+
+}
+
+nav.sticky {
+  padding-left: 170px;
+}
+
+
+header.sticky img {
+  top: 0;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #A1332A;
+  border-radius: 7px;
+}
+
+h3 {
+  text-align: center;
+  color: black;
+  text-decoration: overline;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  padding-top: 55px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#calendario {
+  background-color: #F6F5E8;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#calendario .container {
+  background-color: #A1332A;
+  margin: 100px;
+  --primary-clr: #A1332A;
+  position: relative;
+  max-width: 600px;
+  max-height: auto;
+  padding: 5px;
+  color: #fff;
+  display: flex;
+  border-radius: 10px;
+}
+
+.container .right,
+.container .left {
+  background-color: #A1332A;
+}
+
+.no-event {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-event h3 {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+}
+
+
+#Chisiamo {
+  width: 50%;
+  height: 100px;
+  text-align: center;
+  padding: 30px 30px;
+  background-color: #F6F5E8;
+
+}
+
+#Chisiamo h3 {
+  padding-bottom: 30px;
+}
+
+#accordionExample .accordion-button {
+  background-color: #A1332A;
+  color: white;
+}
+
+#accordionExample .accordion-item {
+  background-color: #b6483f;
+  color: white;
+}
+
+
+.qr {
+  display: flex;
+  justify-content: center;
+  padding: 45px 55px;
+
+  background-color: #F6F5E8;
+}
+
+.qr img {
+  width: 130px;
+}
+
+
+
+.card-card-body {
+  background-color: transparent;
+  color: white;
+
+}
+
+#container-slider {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: -16px;
+}
+
+/* Tamaño */
+#slider {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 80vh;
+  min-height: 500px;
+}
+
+#slider li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: -1;
+  opacity: 0;
+  color: #fff;
+  background-color: gray;
+}
+
+#slider li {
+text-align: center;
+padding-top: 15%;
+}
+
+#slider .slidertext {
+  display: inline-block;
+background-color: #A1332A;
+border-radius: 0.3em;
+margin: 30px;
+width: 50%;
+}
+
+#slider h6 {
+  font-size: 3.5em;
+  font-weight: 800;
+}
+
+#slider p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+#slider .btn-primary {
+  display: inline;
+  font-size: 1.5em;
+  background-color: #cf1100;
+  color: white;
+  border-color: #9a0d00;
+  box-shadow: none;
+  width: 100px;
+  height: 70px;
+}
+
+#container-slider .arrowPrev,
+#container-slider .arrowNext {
+  font-size: 60pt;
+  color: #cf1100;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  z-index: 2;
+}
+
+#container-slider .arrowNext {
+  left: initial;
+  right: 50px !important;
+}
+
+.btnSlider {
+  color: #FFF;
+  font-size: 15pt;
+  font-family: 'arial';
+  letter-spacing: 1px;
+  padding: 10px 50px;
+  border: 1px solid #CCC;
+  background: rgba(13, 13, 13, 0.55);
+  border-radius: 31px;
+  text-decoration: none;
+  transition: .5s all;
+}
+
+.btnSlider:hover {
+  background: #111;
+  border: 1px solid #111;
+}
+
+.listslider {
+  position: absolute;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  bottom: 5%;
+  list-style: none;
+  z-index: 2;
+  transform: translateX(-50%);
+  
+}
+
+.listslider li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.listslider li a {
+  background: #cf1100;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.item-select-slid {
+  background: #FFF !important;
+}
+
+@media screen and (max-width: 460px) {
+
+  #container-slider .arrowPrev,
+  #container-slider .arrowNext {
+    font-size: 20pt;
+  }
+
+  #container-slider .arrowPrev {
+    left: 15px;
+  }
+
+  #container-slider .arrowNext {
+    right: 15px !important;
+  }
+
+  #slider {
+    height: 400px;
+    min-height: 500px;
+  }
+
+  .btnSlider {
+    padding: 10px 30px;
+    font-size: 10pt;
+  }
+
+}
+
+#Servizi {
+  background-color: #F6F5E8;
+}
+
+#Servizi .card-img {
+  border-radius: 30px;
+  min-height: 290px;
+}
+
+#Servizi .container {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+#Servizi .card {
+  margin: 0.5em;
+  text-align: center;
+  background-color: #A1332A;
+  color: white;
+}
+
+#Servizi .btn-outline-danger {
+  font-size: 25px;
+  background-color: rgb(153, 37, 37)
+}
+
+#Servizi .card:hover {
+  color: white;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+#Dove {
+  text-align: center;
+  background-color: #F6F5E8;
+
+}
+
+#Dove .container {
+  padding: 50px;
+  min-height: 20vh;
+  border: 3px solid #A1332A;
+  border-width: 0 4px 8px 12px;
+}
+
+
+#Dove img {
+  width: 120%;
+  padding: 0 35px 15px 0;
+}
+
+#Dove p {
+  padding-bottom: 10px;
+}
+
+#Dove .btn-outline-danger {
+  font-size: 25px;
+
+}
+
+#Contatti {
+  padding: 50px;
+  background-color: #F6F5E8;
+}
+
+#Contatti .container {
+  min-height: 20vh;
+
+}
+
+
+.containercontatti li {
+  background-color: #A1332A;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+
+}
+
+
+.list-group img {
+  width: 35%;
+}
+
+.list-group-item {
+  width: 35%;
+  font-size: 22px;
+}
+
+footer {
+  text-align: center;
+  margin: -16px;
+  color: rgb(233, 233, 233);
+  background-color: #A1332A;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+@media (min-width:720px) {
+
+  header {
+    height: 375px;
+    background-size: cover;
+    background-image:
+      linear-gradient(0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+      url("img/favicon.jpg");
+  }
+
+  header .container {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  header .img {
+    justify-content: space-between;
+    border-radius: 15%;
+  }
+
+  header h1 {
+    padding-bottom: 35px;
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    padding-right: 170px;
+
+  }
+
+
+  nav.sticky {
+    display: flex;
+    padding-right: 170px;
+  }
+
+  #calendario .titulo {
+    padding-top: 100px;
+  }
+
+  #Chisiamo {
+    background-position: 730px 310px;
+    padding-top: 100px;
+  }
+
+  #Chisiamo img {
+    width: 150px;
+    padding: 0 auto;
+
+  }
+
+  .qr {
+    justify-content: space-between;
+  }
+
+  .qr img {
+    width: 150px;
+
+  }
+
+  #Servizi .container {
+    justify-content: center;
+  }
+
+  #Dove img {
+    width: 700px;
+  }
+
+  #Dove .btn-primary {
+    font-size: 30px;
+
+  }
+
+  #Contatti .container {
+    flex-direction: column;
+    max-width: auto;
+  }
+
+  ul.list-group {
+    flex-direction: row;
+  }
+
+
+  footer {
+    text-align: end;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .bordes {
+    margin: 0;
+    padding: 0;
+  }
+
+  #calendario .container {
+
+    max-height: 500px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  header {
+    height: 450px;
+  }
+
+  .container {
+    min-height: 100vh;
+    flex-direction: column;
+    border-radius: 0;
+
+  }
+
+  #calendario .container {
+    max-height: 1350px;
+    padding: 0 25px;
+  }
+
+  .container .left {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+  }
+
+  .container .right {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+  }
+
+  .calendar::before,
+  .calendar::after {
+    top: 100%;
+    left: 50%;
+    width: 97%;
+    height: 12px;
+    border-radius: 0 0 5px 5px;
+    transform: translateX(-50%);
+  }
+
+  .calendar::before {
+    width: 94%;
+    top: calc(100% + 12px);
+  }
+
+  .events {
+    padding-bottom: 340px;
+  }
+
+  .add-event-wrapper {
+    bottom: 100px;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width:1000px) {
+  #calendario .container {
+    width: 1200px;
+    max-height: 1150px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  #calendario .container {
+    width: 520px;
+    max-height: 1200px;
+    padding: 0 15px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .calendar .month {
+    height: 75px;
+  }
+
+  .calendar .weekdays {
+    height: 50px;
+  }
+
+  .calendar .days .day {
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .calendar .days .day.active,
+  .calendar .days .day.today {
+    font-size: 1rem;
+  }
+
+  .right .today-date {
+    padding: 20px;
+  }
+
+  #calendario {
+    flex-direction: column;
+    align-items: center;
+    max-height: auto;
+
+  }
+
+  #calendario .container {
+    width: 350px;
+    padding: 0 15px;
+
+  }
+
+
+
+  .add-event-wrapper {
+    max-height: auto;
+  }
+
+  .no-event h3 {
+    padding: 50px 10px 0 10px;
+  }
+
+  #Chisiamo {
+    margin: -100px 0 10px 0;
+    width: 90%;
+    height: auto;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  nav.sticky {
+    padding: 0;
+
+  }
+
+  .sticky {
+    height: 65px;
+  }
+
+  .list-group,
+  .list-group-item {
+    width: 100%;
+    font-size: 15px;
+  }
+
+}
