@@ -202,108 +202,6 @@ h3 {
 }
 
 
-#Servizi {
-  background-color: #A1332A;
-  color: white;
-
-}
-
-
-
-#Servizi .container {
-  padding: 50px;
-  color: blanch;
-  text-align: center;
-  background-size: cover;
-
-}
-
-#Servizi .collapse {
-  display: flexbox;
-
-}
-
-#Servizi .btn-primary {
-  background-color: #cf1100;
-  color: white;
-  border-color: #9a0d00;
-}
-
-.carta {
-  margin: 30px;
-  padding: 50px;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.carta:first-child {
-  background-image:
-    linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url("img/cafpatronato.jpg");
-}
-
-
-.carta:nth-child(2) {
-  background-image:
-    linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url("img/patronato.jpg");
-}
-
-.carta:nth-child(3) {
-  background-image:
-
-    linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url("img/CENTRO-SERVIZI.jpg");
-}
-
-.carta:nth-child(4) {
-  background-image:
-
-    linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url("img/mundo.jpg");
-}
-
-.carta:nth-child(5) {
-  background-image:
-
-    linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url("img/trabajos.jpeg");
-
-
-}
-
-.carta:nth-child(6) {
-  background-image:
-
-    linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url("img/successioni.jpg");
-
-
-}
-
-.carta:nth-child(7) {
-  background-image:
-
-    linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url("img/Pratica-Enea.webp");
-
-
-}
 
 .card-card-body {
   background-color: transparent;
@@ -480,36 +378,35 @@ width: 50%;
 
 }
 
-#Colaboratori {
+#Servizi {
   background-color: #F6F5E8;
-
 }
 
-#Colaboratori .card-img {
+#Servizi .card-img {
   border-radius: 30px;
+  min-height: 290px;
 }
 
-#Colaboratori .container {
+#Servizi .container {
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-  align-items: center;
   padding-bottom: 50px;
 }
 
-#Colaboratori .card {
+#Servizi .card {
   margin: 0.5em;
   text-align: center;
   background-color: #A1332A;
   color: white;
 }
 
-#Colaboratori .btn-outline-danger {
+#Servizi .btn-outline-danger {
   font-size: 25px;
   background-color: rgb(153, 37, 37)
 }
 
-#Colaboratori .card:hover {
+#Servizi .card:hover {
   color: white;
 }
 
@@ -650,7 +547,7 @@ footer {
 
   }
 
-  #Colaboratori .container {
+  #Servizi .container {
     justify-content: center;
   }
 
