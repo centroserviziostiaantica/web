@@ -247,16 +247,16 @@ h3 {
 }
 
 #slider li {
-text-align: center;
-padding-top: 15%;
+  text-align: center;
+  padding-top: 15%;
 }
 
 #slider .slidertext {
   display: inline-block;
-background-color: #A1332A;
-border-radius: 0.3em;
-margin: 30px;
-width: 50%;
+  background-color: #A1332A;
+  border-radius: 0.3em;
+  margin: 30px;
+  width: 50%;
 }
 
 #slider h6 {
@@ -269,15 +269,22 @@ width: 50%;
   font-weight: 500;
 }
 
-#slider .btn-primary, #Servizi .btn-primary {
-  display: inline;
-  font-size: 1.5em;
+#slider .btn-primary {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3em;
+  width: 170px;
+  height: auto;
+}
+
+#slider .btn-primary,
+#Servizi .btn-primary {
   background-color: #cf1100;
   color: white;
   border-color: #9a0d00;
   box-shadow: none;
-  width: 100px;
-  height: 70px;
 }
 
 #container-slider .arrowPrev,
@@ -323,12 +330,12 @@ width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  left: 50%;
+  left: 49.3%;
   bottom: 5%;
   list-style: none;
   z-index: 2;
   transform: translateX(-50%);
-  
+
 }
 
 .listslider li {
@@ -350,8 +357,6 @@ width: 50%;
 .item-select-slid {
   background: #FFF !important;
 }
-
-
 
 #Servizi {
   background-color: #F6F5E8;
@@ -380,20 +385,52 @@ width: 50%;
   border-radius: 0.7em;
 }
 
+#Servizi .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+}
+
+#Servizi .card-container {
+  align-items: flex-end;
+}
+
 #Servizi .card h5 {
-font-weight: bolder;
-font-size: 2.5em;
-font-family: 'Times New Roman', Times, serif
+  font-weight: bolder;
+  font-size: 2.5em;
+  font-family: 'Times New Roman', Times, serif
+}
+
+#Servizi .card-text {
+  min-height: 50%;
+  /* border:2px solid lime */
 }
 
 #Servizi .btn-outline-danger {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 65px;
   font-size: 30px;
   background-color: rgb(153, 37, 37);
 }
 
-#Servizi .btn-primary:hover {
-  color:#cf1100;
+#Servizi .btn-primary {
+  position: absolute;
+  bottom: 10px;
+  left: 85%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  box-shadow: none;
+  width: 80px;
+  height: 65px;
+}
+
+#Servizi .btn-primary:hover,
+#slider .btn-primary:hover {
+
+  color: #cf1100;
   border-color: red;
   background-color: white;
 }
