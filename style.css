@@ -11,7 +11,7 @@ img {
 }
 
 body {
-  background-color: rgb(247, 225, 192);
+  background-color:  #F6F5E8 !important;
 }
 
 header {
@@ -204,82 +204,6 @@ h3 {
   background-color: transparent;
   color: white;
 
-}
-
-/* Estilos específicos para la sección #info730 */
-#Documenti {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  line-height: 1.6;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Titulares dentro de #730 */
-#Documenti h3 {
-  color: #0056b3;
-  font-size: 24px;
-  border-bottom: 2px solid #0056b3;
-  padding-bottom: 5px;
-}
-
-#Documenti h4 {
-  color: #007bff;
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-#Documenti h5 {
-  color: #28a745;
-  font-size: 18px;
-  margin-top: 15px;
-}
-
-/* Párrafos dentro de #730 */
-#Documenti p {
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-/* Listas dentro de #730 */
-#Documenti ul {
-  padding-left: 20px;
-}
-
-#Documenti ul li {
-  margin-bottom: 8px;
-}
-
-/* Destacar secciones importantes dentro de #730 */
-#Documenti strong {
-  color: #d9534f;
-}
-
-/* Responsive solo para #730 */
-@media (max-width: 768px) {
-  #Documenti {
-    padding: 15px;
-  }
-
-  #Documenti h3 {
-    font-size: 22px;
-  }
-
-  #Documenti h4 {
-    font-size: 18px;
-  }
-
-  #Documenti h5 {
-    font-size: 16px;
-  }
-
-  #Documenti p {
-    font-size: 14px;
-  }
 }
 
 #container-slider {
@@ -587,18 +511,91 @@ footer {
 
 }
 
+/* Estilos específicos para la sección #info730 */
 #Documenti {
-  background-color: #F6F5E8;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color:  #eeeddb;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+
+/* Titulares dentro de #730 */
+#Documenti h3 {
+  color: #0056b3;
+  font-size: 24px;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+}
+
+#Documenti h4 {
+  color: #007bff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#Documenti h5 {
+  color: #28a745;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Párrafos dentro de #730 */
+#Documenti p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Listas dentro de #730 */
+#Documenti ul {
+  padding-left: 20px;
+}
+
+#Documenti ul li {
+  margin-bottom: 8px;
+}
+
+/* Destacar secciones importantes dentro de #730 */
+#Documenti strong {
+  color: #d9534f;
+}
+
+/* Responsive solo para #730 */
+@media (max-width: 768px) {
+  #Documenti {
+    padding: 15px;
+  }
+
+  #Documenti h3 {
+    font-size: 22px;
+  }
+
+  #Documenti h4 {
+    font-size: 18px;
+  }
+
+  #Documenti h5 {
+    font-size: 16px;
+  }
+
+  #Documenti p {
+    font-size: 14px;
+  }
 }
 
 #Successioni {
   font-family: Arial, sans-serif;
   color: #333;
   padding: 20px;
-  background-color: #f4f4f4;
   border-radius: 8px;
+  background-color:  #eeeddb;
   text-align: left; /* Centra el texto dentro del contenedor */
-  margin: 0 auto; /* Centra el contenedor en la página */
+  margin: 20px auto; /* Centra el contenedor en la página */
   max-width: 800px; /* Máxima anchura para que el contenido no se estire demasiado */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd; /* Borde suave para imitar una hoja */
@@ -653,16 +650,17 @@ footer {
 }
 
 
+
 #ENEA {
   font-family: Arial, sans-serif;
   color: #333;
   padding: 20px;
-  background-color: #fff;
+  background-color:  #eeeddb;
   border-radius: 8px;
-  margin: 0 auto; /* Centrar el contenedor */
+  margin: 20px auto; /* Centrar el contenedor */
   max-width: 900px; /* Ajuste para mejor lectura */
   text-align: left; /* Texto alineado a la izquierda */
-  
+  bottom: 100px;
   /* Efecto de sombra */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
