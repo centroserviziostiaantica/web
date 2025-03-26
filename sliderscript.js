@@ -1,5 +1,52 @@
-if (document.querySelector('#container-slider')) {
-    setInterval('fntExecuteSlide("next")', 5000);
+let sliderInterval;
+let idleTimeout;
+
+const sliderElement = document.querySelector('#container-slider');
+
+// Función para ejecutar el slide
+function fntExecuteSlide(direction) {
+    // Aquí va el código para mover el slider en la dirección indicada
+    console.log('Ejecutando slide en dirección:', direction);
+}
+
+// Función para iniciar el slider
+function startSlider() {
+    sliderInterval = setInterval(() => {
+        fntExecuteSlide('next');
+    }, 5000);
+}
+
+// Función para detener el slider
+function stopSlider() {
+    clearInterval(sliderInterval);
+}
+
+// Función para reiniciar el timeout de inactividad
+function resetIdleTimeout() {
+    clearTimeout(idleTimeout);
+    idleTimeout = setTimeout(() => {
+        startSlider();
+    }, 10000); // 10 segundos de inactividad
+}
+
+// Iniciar el slider al cargar la página
+if (sliderElement) {
+    startSlider();
+
+    // Pausar el slider cuando el usuario interactúa (mouse over)
+    sliderElement.addEventListener('mouseover', () => {
+        stopSlider(); // Pausar el slider
+    });
+
+    // Reiniciar el slider después de 10 segundos de inactividad
+    sliderElement.addEventListener('mouseout', () => {
+        resetIdleTimeout(); // Reiniciar el temporizador de inactividad
+    });
+
+    // Cuando el slider comienza a moverse, se resetea el tiempo de inactividad
+    sliderElement.addEventListener('mousemove', () => {
+        resetIdleTimeout(); // Reiniciar el temporizador si hay movimiento del ratón
+    });
 }
 
 if (document.querySelector('.listslider')) {

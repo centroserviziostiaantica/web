@@ -133,7 +133,6 @@ h3 {
   justify-content: space-around;
 }
 
-
 #calendario .container {
   background-color: #A1332A;
   margin: 100px;
@@ -207,7 +206,7 @@ h3 {
 
 }
 
-/* Estilos específicos para la sección #730 */
+/* Estilos específicos para la sección #info730 */
 #Documenti {
   font-family: Arial, sans-serif;
   color: #333;
@@ -588,6 +587,139 @@ footer {
 
 }
 
+#Documenti {
+  background-color: #F6F5E8;
+}
+
+#Successioni {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: left; /* Centra el texto dentro del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  max-width: 800px; /* Máxima anchura para que el contenido no se estire demasiado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Borde suave para imitar una hoja */
+  background-color: #fff; /* Fondo blanco para el contenido */
+}
+
+#Successioni h1, #Successioni h2 {
+  color: #0066cc;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#Successioni p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#Successioni ul, #Successioni ol {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#Successioni li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+#Successioni ul li {
+  list-style-type: disc;
+}
+
+#Successioni ol li {
+  list-style-type: decimal;
+}
+
+@media screen and (max-width: 768px) {
+  #Successioni {
+      padding: 15px;
+  }
+
+  #Successioni h1, #Successioni h2 {
+      font-size: 1.5rem;
+  }
+
+  #Successioni p, #Successioni li {
+      font-size: 0.95rem;
+  }
+}
+
+
+#ENEA {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0 auto; /* Centrar el contenedor */
+  max-width: 900px; /* Ajuste para mejor lectura */
+  text-align: left; /* Texto alineado a la izquierda */
+  
+  /* Efecto de sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+#ENEA h1, #ENEA h2, #ENEA h3 {
+  color: #0066cc;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center; /* Centra solo los títulos */
+}
+
+#ENEA h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+#ENEA p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#ENEA ul, #ENEA ol {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#ENEA li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+#ENEA ul li {
+  list-style-type: disc;
+}
+
+#ENEA ol li {
+  list-style-type: decimal;
+}
+
+@media screen and (max-width: 768px) {
+  #ENEA {
+      padding: 15px;
+  }
+
+  #ENEA h1, #ENEA h2, #ENEA h3 {
+      font-size: 1.5rem;
+  }
+
+  #ENEA p, #ENEA li {
+      font-size: 0.95rem;
+  }
+}
+
 @media (min-width:720px) {
 
   header {
@@ -686,10 +818,8 @@ footer {
   }
 
   #calendario .container {
-
     max-height: 500px;
   }
-
 }
 
 @media screen and (max-width: 481px) {
@@ -717,32 +847,32 @@ footer {
     font-size: 10pt;
   }
 
-  #slider .slidertext{
+  #slider .slidertext {
     background-color: transparent;
   }
 
-  #slider .slidertext p{
+  #slider .slidertext p {
     visibility: hidden;
     background-color: transparent;
   }
 
-  #slider .slidertext h6{
+  #slider .slidertext h6 {
     padding: 0;
     margin: 0;
     font-size: 1.75em;
     background-color: #A1332A;
   }
 
-  #Servizi .card-img{
+  #Servizi .card-img {
     min-height: 150px;
   }
 
-  #Servizi .card{
-   height: 340px;
+  #Servizi .card {
+    height: 340px;
   }
 
-  #Servizi .card-text{
-  visibility: hidden;
+  #Servizi .card-text {
+    visibility: hidden;
   }
 
 }
@@ -754,7 +884,7 @@ footer {
   }
 
   header {
-    height: 450px;
+    min-height: 350px;
   }
 
   .container {
