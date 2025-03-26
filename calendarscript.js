@@ -261,7 +261,7 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>   </h3>
+            <h3>Medico Legale e Avvocato 25/04 in sede  </h3>
             <h3>   </h3>
             
         </div>`
