@@ -1,3 +1,4 @@
+
 * {
   padding: 0px;
   margin: 0px;
@@ -599,7 +600,6 @@ footer {
   max-width: 800px; /* Máxima anchura para que el contenido no se estire demasiado */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd; /* Borde suave para imitar una hoja */
-  background-color: #fff; /* Fondo blanco para el contenido */
 }
 
 #Successioni h1, #Successioni h2 {
@@ -1020,5 +1020,6 @@ footer {
     width: 100%;
     font-size: 15px;
   }
+
 
 }

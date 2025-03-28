@@ -1,3 +1,4 @@
+
 let sliderInterval;
 let idleTimeout;
 
@@ -94,4 +95,5 @@ function fntExecuteSlide(side) {
     elements[curElement].style.zIndex = 0;
     elements[nextElement].style.opacity = 1;
     elements[nextElement].style.zIndex = 1;
+
 }

@@ -1,3 +1,4 @@
+
 const calendar = document.querySelector(".calendar"),
   date = document.querySelector(".date"),
   daysContainer = document.querySelector(".days"),
@@ -261,7 +262,7 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>Medico Legale e Avvocato 25/04 in sede  </h3>
+            <h3>Medico Legale e Avvocato 04/04 in sede  </h3>
             <h3>   </h3>
             
         </div>`
@@ -475,4 +476,5 @@ function convertTime(time) {
   time = timeHour + ":" + timeMin + " " + timeFormat;
   return time;
 }
+
 
