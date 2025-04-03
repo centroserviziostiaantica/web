@@ -189,22 +189,68 @@ h3 {
 }
 
 
-.qr {
-  display: flex;
-  justify-content: center;
-  padding: 45px 55px;
-
-  background-color: #F6F5E8;
-}
-
-.qr img {
-  width: 130px;
-}
 
 .card-card-body {
   background-color: transparent;
   color: white;
 
+}
+
+
+#carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  
+  background-color: #343f4f;
+}
+
+.wrapper{
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper i {
+  top: 50%;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2.5;
+  background: #FFF;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+
+.wrapper i:first-child {
+left: -27px;
+} 
+
+.wrapper i:last-child {
+  right:  -26px;
+} 
+
+
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.carousel img {
+  height: 340px;
+  object-fit: cover;
+  width: calc(100%/3);
+
+}
+
+.carousel img:first-child{
+  margin-left: 0px;
 }
 
 #container-slider {
@@ -378,15 +424,16 @@ h3 {
   width: 354px;
   margin: 0.5em;
   text-align: center;
-  background-color: #A1332A;
-  color: white;
+  background-color: #F6F5E8;
+  color: black;
   border-radius: 0.7em;
+  border-color: #F6F5E8;
 }
 
 #Servizi .card-body {
   display: flex;
   flex-direction: column;
-  height: 430px;
+  height: 180px;
 }
 
 #Servizi .card-container {
@@ -394,9 +441,8 @@ h3 {
 }
 
 #Servizi .card h5 {
-  font-weight: bolder;
   font-size: 2.5em;
-  font-family: 'Times New Roman', Times, serif
+  
 }
 
 #Servizi .card-text {
@@ -409,8 +455,10 @@ h3 {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  height: 65px;
-  font-size: 30px;
+  height:45px;
+  width: 150px;
+  font-size: 20px;
+  color: #f58b8b;
   background-color: rgb(153, 37, 37);
 }
 
@@ -426,15 +474,20 @@ h3 {
 }
 
 #Servizi .btn-primary:hover,
-#slider .btn-primary:hover {
+#slider .btn-primary:hover
+ {
 
-  color: #cf1100;
+  color: #d31c0c;
   border-color: red;
   background-color: white;
 }
 
+#Servizi .btn-outline-danger:hover {
+  color: white;
+}
+
 #Servizi .card:hover {
-  border-color: rgb(230, 36, 36);
+  border-color: #A1332A;
   border-width: 4px;
 }
 
@@ -477,26 +530,31 @@ h3 {
 
 #Contatti .container {
   min-height: 20vh;
-
+  
 }
 
 
 .containercontatti li {
   background-color: #A1332A;
-  border-radius: 10px;
+  border-radius: px;
   text-align: center;
   color: white;
-
 }
 
+.list-group {
+  display: flex;
+
+}
 
 .list-group img {
   width: 35%;
 }
 
 .list-group-item {
+  margin: 10px;
   width: 35%;
   font-size: 22px;
+  display: inline-block;
 }
 
 footer {
@@ -862,11 +920,11 @@ footer {
   }
 
   #Servizi .card-img {
-    min-height: 150px;
+    min-height: 300px;
   }
 
   #Servizi .card {
-    height: 340px;
+    height: 440px;
   }
 
   #Servizi .card-text {
@@ -931,6 +989,12 @@ footer {
   .add-event-wrapper {
     bottom: 100px;
   }
+
+  .carousel img {
+   width: calc(100%/2);
+  }
+
+
 }
 
 
@@ -1021,5 +1085,8 @@ footer {
     font-size: 15px;
   }
 
+ .carousel img {
+   width: 100%;
+  }
 
 }
