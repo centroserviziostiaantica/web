@@ -170,8 +170,8 @@ width: 115%;
       transform: translateX(0);
   }
   100% {
-      -webkit-transform: translateX(calc(-200px * 7));
-      transform: translateX(calc(-200px * 7));
+      -webkit-transform: translateX(calc(-200px * 3.5));
+      transform: translateX(calc(-200px * 3.5));
   }
 }
 
