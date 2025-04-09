@@ -446,6 +446,46 @@
           <p></p>
         </div>
       </div>
+      <div class="item" style="background-image: url('./img/greenwaycuadrado.jpg');">
+        <div class="item-desc">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+  
+      <div class="item" style="background-image: url('./img/opendef.jfif');">
+        <div class="item-desc">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+      <a href="magodioz.html">
+        <div class="item" style="background-image: url('./img/magodiozdef.jfif');">
+          <div class="item-desc">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </a>
+      <div class="item" style="background-image: url('./img/allianzdef.jfif');">
+        <div class="item-desc">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url('./img/yonuevo.jfif');">
+        <div class="item-desc">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+        <div class="item" style="background-image: url('./img/greenwaycuadrado.jpg');">
+          <div class="item-desc">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      
     </div>
   </section>
 
@@ -664,6 +704,25 @@
         autoplay: true,             // Desplazamiento automático
         autoplayTimeout: 2000,      // Intervalo de 2 segundos
         autoplayHoverPause: true,   // Pausa cuando el ratón pasa por encima
+        responsive: {
+          0: {
+            items: 3, // En pantallas muy pequeñas (móviles)
+            margin: 205,
+          },
+          480: {
+            items: 3,// En móviles más anchos
+            margin: 205,
+          },
+          768: {
+            items: 5, // En tablets
+          },
+          1024: {
+            items: 5, // En pantallas medianas
+          },
+          1200: {
+            items: 5 // En pantallas grandes
+          }
+        }
       });
     });
   </script>

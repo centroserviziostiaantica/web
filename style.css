@@ -501,6 +501,7 @@ font-size: 2em;
   justify-content: center; /* Centrado horizontal */
   color: white;
   flex-shrink: 0;
+  
 }
 
 .custom-carousel .item.active {
@@ -541,9 +542,15 @@ font-size: 2em;
 }
 
 /* Ajustes de diseño responsivo */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
+  #Collaborazioni {
+    min-height: 40vh;
+    padding-bottom: 0;
+  }
+
   .custom-carousel .item {
-    height: 250px;
+    height: 200px;
     width: 200px;
   }
 
@@ -555,6 +562,7 @@ font-size: 2em;
     font-size: 0.9rem;
   }
 }
+
 
 
 #Contatti {
@@ -982,6 +990,31 @@ footer {
 
 @media screen and (max-width: 481px) {
 
+  header img{
+    width: 25%;
+  }
+
+  #titulo{
+    font-size: 3em;
+    padding-top: 15px;
+  }
+
+  #titulo2{
+    font-size: 2em;
+    padding-top: 30px;
+    padding-left:23%;
+  }
+
+  .navbar-ul{
+    padding-top: 30px;
+  }
+
+  nav.sticky ul {
+    margin-top: -5.5%;
+    color: black;
+  }
+
+
   #container-slider .arrowPrev,
   #container-slider .arrowNext {
     font-size: 20pt;
@@ -1117,6 +1150,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+
+  
+
   .calendar .month {
     height: 75px;
   }
