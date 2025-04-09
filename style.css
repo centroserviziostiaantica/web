@@ -840,6 +840,10 @@ footer {
   #ENEA p, #ENEA li {
       font-size: 0.95rem;
   }
+
+  .btn-outline-danger {
+    visibility: visible;
+  }
 }
 
 #magodioz {
@@ -1676,6 +1680,10 @@ footer {
     visibility: hidden;
   }
 
+
+  #Collaborazioni .item {
+   top: 90px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
