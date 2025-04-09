@@ -489,6 +489,7 @@ font-size: 2em;
 }
 
 .custom-carousel .item {
+  left: -35px;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -539,6 +540,28 @@ font-size: 2em;
 .item-desc p {
   margin: 5px 0 0;
   font-size: 0.95rem;
+}
+
+.custom-dots {
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 150px;
+}
+
+.custom-dots .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  padding: 7px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-dots .dot.active {
+  background: #A1332A;
 }
 
 /* Ajustes de diseño responsivo */

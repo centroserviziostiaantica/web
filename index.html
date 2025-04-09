@@ -485,9 +485,9 @@
             <p></p>
           </div>
         </div>
-      
     </div>
   </section>
+  <div class="custom-dots"></div>
 
   <!-- <section id="carrusel">
     <div class="wrapper">
@@ -704,6 +704,34 @@
         autoplay: true,             // Desplazamiento automático
         autoplayTimeout: 2000,      // Intervalo de 2 segundos
         autoplayHoverPause: true,   // Pausa cuando el ratón pasa por encima
+        dots: false,
+        slideBy: 1, // se mueve de a 1 item por dot
+        onInitialized: function (event) {
+        var dotContainer = $('.custom-dots');
+        var count = event.item.count; // Número total de ítems
+
+        dotContainer.empty(); // Limpia los dots previos
+        for (let i = 0; i < count; i++) {
+          dotContainer.append(`<span class="dot" data-slide="${i}"></span>`);
+        }
+
+        dotContainer.find('.dot').first().addClass('active');
+
+        // Click en dot personalizado
+        dotContainer.on('click', '.dot', function () {
+          let index = $(this).data('slide');
+          $carousel.trigger('to.owl.carousel', [index, 300]);
+          dotContainer.find('.dot').removeClass('active');
+          $(this).addClass('active');
+        });
+      },
+      onChanged: function (event) {
+        let index = event.item.index % event.item.count;
+        let dotContainer = $('.custom-dots');
+        dotContainer.find('.dot').removeClass('active');
+        dotContainer.find(`.dot[data-slide="${index}"]`).addClass('active');
+      }
+    ,
         responsive: {
           0: {
             items: 3, // En pantallas muy pequeñas (móviles)
