@@ -460,7 +460,7 @@ display: none;
   
 }
 
-#collaborazioni  {
+#Collaborazioni  {
 color:  #F6F5E8;
 margin-bottom: -80px;
 font-size: 2em;
@@ -779,6 +779,72 @@ footer {
   }
 }
 
+#magodioz {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  background-color:  #eeeddb;
+  text-align: left; /* Centra el texto dentro del contenedor */
+  margin: 20px auto; /* Centra el contenedor en la página */
+  max-width: 800px; /* Máxima anchura para que el contenido no se estire demasiado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Borde suave para imitar una hoja */
+}
+
+#magodioz h1, #magodioz h2 {
+  color: #0066cc;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#magodioz h2 {
+  text-align: left;
+  margin-left: 50px;
+}
+
+#magodioz p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#magodioz ul, #magodioz ol {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#magodioz li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+#magodioz ul li {
+  list-style-type: disc;
+}
+
+#magodioz ol li {
+  list-style-type: decimal;
+}
+
+@media screen and (max-width: 768px) {
+  #magodioz {
+      padding: 15px;
+  }
+
+  #magodioz h1, #magodioz h2 {
+      font-size: 1.5rem;
+  }
+
+  #magodioz p, #magodioz li {
+      font-size: 0.95rem;
+  }
+}
+
+
 @media (min-width:720px) {
 
   header {
@@ -790,6 +856,7 @@ footer {
         rgba(0, 0, 0, 0.5)),
       url("img/favicon.jpg");
   }
+
 
   header .container {
     flex-direction: column;
