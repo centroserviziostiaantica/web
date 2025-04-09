@@ -46,6 +46,7 @@
 
   <div class="slider">
     <div class="slide-track">
+
       <div class="slide">
         <a href="magodioz.html">
           <img src="img/magodioz.jfif" alt="">
@@ -53,7 +54,9 @@
       </div>
 
       <div class="slide">
-        <img src="img/allianz.jfif" alt="">
+        <a href="allianz.html">
+          <img src="img/allianz.jfif" alt="">
+        </a>
       </div>
 
       <div class="slide">
@@ -62,7 +65,9 @@
 
 
       <div class="slide">
-        <img src="img/opene.jfif" alt="">
+        <a href="open.html">
+          <img src="img/opene.jfif" alt="">
+        </a>
       </div>
 
 
@@ -77,15 +82,20 @@
       </div>
 
       <div class="slide">
-        <img src="img/allianz.jfif" alt="">
+        <a href="allianz.html">
+          <img src="img/allianz.jfif" alt="">
+        </a>
       </div>
 
       <div class="slide">
         <img class="chiquitos" src="img/yobanner.jfif" alt="">
       </div>
 
+
       <div class="slide">
-        <img src="img/opene.jfif" alt="">
+        <a href="open.html">
+          <img src="img/opene.jfif" alt="">
+        </a>
       </div>
 
 
@@ -100,7 +110,9 @@
       </div>
 
       <div class="slide">
-        <img src="img/allianz.jfif" alt="">
+        <a href="allianz.html">
+          <img src="img/allianz.jfif" alt="">
+        </a>
       </div>
 
       <div class="slide">
@@ -109,7 +121,9 @@
 
 
       <div class="slide">
-        <img src="img/opene.jfif" alt="">
+        <a href="open.html">
+          <img src="img/opene.jfif" alt="">
+        </a>
       </div>
 
 
@@ -124,7 +138,9 @@
       </div>
 
       <div class="slide">
-        <img src="img/allianz.jfif" alt="">
+        <a href="allianz.html">
+          <img src="img/allianz.jfif" alt="">
+        </a>
       </div>
 
       <div class="slide">
@@ -133,14 +149,15 @@
 
 
       <div class="slide">
-        <img src="img/opene.jfif" alt="">
+        <a href="open.html">
+          <img src="img/opene.jfif" alt="">
+        </a>
       </div>
 
 
       <div class="slide">
         <img class="chiquitos" src="img/greenwaybanner.jfif" alt="">
       </div>
-
 
     </div>
   </div>
@@ -421,13 +438,13 @@
 
     <div class="owl-carousel custom-carousel owl-theme">
       <a href="open.html" target="_blank">
-      <div class="item active" style="background-image: url('./img/opendef.jfif');">
-        <div class="item-desc">
-          <h3></h3>
-          <p></p>
+        <div class="item active" style="background-image: url('./img/opendef.jfif');">
+          <div class="item-desc">
+            <h3></h3>
+            <p></p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
       <a href="magodioz.html" target="_blank">
         <div class="item" style="background-image: url('./img/magodiozdef.jfif');">
           <div class="item-desc">
@@ -437,13 +454,13 @@
         </div>
       </a>
       <a href="allianz.html" target="_blank">
-      <div class="item" style="background-image: url('./img/allianzdef.jfif');">
-        <div class="item-desc">
-          <h3></h3>
-          <p></p>
+        <div class="item" style="background-image: url('./img/allianzdef.jfif');">
+          <div class="item-desc">
+            <h3></h3>
+            <p></p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
       <div class="item" style="background-image: url('./img/yonuevo.jfif');">
         <div class="item-desc">
           <h3></h3>
@@ -464,15 +481,15 @@
           </div>
         </div>
       </a>
-        <a href="magodioz.html" target="_blank">
-          <div class="item" style="background-image: url('./img/magodiozdef.jfif');">
-            <div class="item-desc">
-              <h3></h3>
-              <p></p>
-            </div>
+      <a href="magodioz.html" target="_blank">
+        <div class="item" style="background-image: url('./img/magodiozdef.jfif');">
+          <div class="item-desc">
+            <h3></h3>
+            <p></p>
           </div>
-        </a>
-        <a href="allianz.html" target="_blank">
+        </div>
+      </a>
+      <a href="allianz.html" target="_blank">
         <div class="item" style="background-image: url('./img/allianzdef.jfif');">
           <div class="item-desc">
             <h3></h3>
@@ -486,12 +503,12 @@
           <p></p>
         </div>
       </div>
-        <div class="item" style="background-image: url('./img/greenwaycuadrado.jpg');">
-          <div class="item-desc">
-            <h3></h3>
-            <p></p>
-          </div>
+      <div class="item" style="background-image: url('./img/greenwaycuadrado.jpg');">
+        <div class="item-desc">
+          <h3></h3>
+          <p></p>
         </div>
+      </div>
     </div>
   </section>
   <div class="custom-dots"></div>
@@ -714,31 +731,31 @@
         dots: false,
         slideBy: 1, // se mueve de a 1 item por dot
         onInitialized: function (event) {
-        var dotContainer = $('.custom-dots');
-        var count = event.item.count; // Número total de ítems
+          var dotContainer = $('.custom-dots');
+          var count = event.item.count; // Número total de ítems
 
-        dotContainer.empty(); // Limpia los dots previos
-        for (let i = 0; i < count; i++) {
-          dotContainer.append(`<span class="dot" data-slide="${i}"></span>`);
-        }
+          dotContainer.empty(); // Limpia los dots previos
+          for (let i = 0; i < count; i++) {
+            dotContainer.append(`<span class="dot" data-slide="${i}"></span>`);
+          }
 
-        dotContainer.find('.dot').first().addClass('active');
+          dotContainer.find('.dot').first().addClass('active');
 
-        // Click en dot personalizado
-        dotContainer.on('click', '.dot', function () {
-          let index = $(this).data('slide');
-          $carousel.trigger('to.owl.carousel', [index, 300]);
+          // Click en dot personalizado
+          dotContainer.on('click', '.dot', function () {
+            let index = $(this).data('slide');
+            $carousel.trigger('to.owl.carousel', [index, 300]);
+            dotContainer.find('.dot').removeClass('active');
+            $(this).addClass('active');
+          });
+        },
+        onChanged: function (event) {
+          let index = event.item.index % event.item.count;
+          let dotContainer = $('.custom-dots');
           dotContainer.find('.dot').removeClass('active');
-          $(this).addClass('active');
-        });
-      },
-      onChanged: function (event) {
-        let index = event.item.index % event.item.count;
-        let dotContainer = $('.custom-dots');
-        dotContainer.find('.dot').removeClass('active');
-        dotContainer.find(`.dot[data-slide="${index}"]`).addClass('active');
-      }
-    ,
+          dotContainer.find(`.dot[data-slide="${index}"]`).addClass('active');
+        }
+        ,
         responsive: {
           0: {
             items: 3, // En pantallas muy pequeñas (móviles)
