@@ -449,28 +449,50 @@ display: none;
 
 }
 
-.game-section {
+#Collaborazioni {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height:70vh;
+  min-height: 70vh;
   max-width: 100%;
   background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+  animation: gradientGlow 8s ease infinite alternate;
+  box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  overflow: hidden;
   margin-bottom: 50px;
-  
+
 }
 
-#Collaborazioni  {
+@keyframes gradientGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.tituloCollaborazioni {
 color:  #F6F5E8;
 margin-bottom: -80px;
 font-size: 2em;
+}
+
+.custom-carousel {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .custom-carousel .item {
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
   position: relative;
   height: 350px;
   width: 380px;
@@ -478,6 +500,7 @@ font-size: 2em;
   align-items: flex-end;
   justify-content: center; /* Centrado horizontal */
   color: white;
+  flex-shrink: 0;
 }
 
 .custom-carousel .item.active {
@@ -485,9 +508,18 @@ font-size: 2em;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+.custom-carousel:hover .item {
+  opacity: 0.4;
+  transform: scale(0.95);
+  filter: blur(1px);
+}
+
 .custom-carousel .item:hover {
-  transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+  transform: scale(1.1);
+  opacity: 1 !important;
+  filter: none !important;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .item-desc {
