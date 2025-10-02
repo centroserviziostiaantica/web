@@ -7,6 +7,9 @@
   font-family: Tahoma;
 }
 
+/* mantiene un gutter estable para el scroll en navegadores modernos */
+html { scrollbar-gutter: stable both-edges; }
+
 
 body {
   background-color:  #F6F5E8 !important;
@@ -106,7 +109,7 @@ nav a {
 .sticky {
   position: fixed;
   top: 0;
-  right: 7px;
+  right: 0.5px;
   height: 45px;
   width: 100%;
   padding: 5px 10px;
@@ -1556,7 +1559,6 @@ footer {
   #Chisiamo img {
     width: 150px;
     padding: 0 auto;
-
   }
 
   .qr {
@@ -1679,6 +1681,7 @@ footer {
 
   #Servizi .card {
     height: 440px;
+    margin-left: 35px;
   }
 
   #Servizi .card-text {
@@ -1708,7 +1711,7 @@ footer {
 
   }
 
-  #calendario .container {
+  /* #calendario .container {
     max-height: 1350px;
     padding: 0 25px;
   }
@@ -1746,7 +1749,7 @@ footer {
 
   .add-event-wrapper {
     bottom: 100px;
-  }
+  } */
 
   .carousel img {
    width: calc(100%/2);
@@ -1756,7 +1759,7 @@ footer {
 }
 
 
-@media screen and (min-width: 600px) and (max-width:1000px) {
+/* @media screen and (min-width: 600px) and (max-width:1000px) {
   #calendario .container {
     width: 1200px;
     max-height: 1150px;
@@ -1770,13 +1773,13 @@ footer {
     padding: 0 15px;
   }
 
-}
+} */
 
 @media screen and (max-width: 500px) {
 
   
 
-  .calendar .month {
+  /* .calendar .month {
     height: 75px;
   }
 
@@ -1819,13 +1822,15 @@ footer {
 
   .no-event h3 {
     padding: 50px 10px 0 10px;
-  }
+  } */
 
   #Chisiamo {
-    margin: -100px 0 10px 0;
+    margin: -10px 0 10px 25px;
     width: 90%;
     height: auto;
+    padding-bottom: 5%;
   }
+
 
   nav {
     padding: 0;
